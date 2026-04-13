@@ -1,0 +1,32 @@
+/* .parent {
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    justify-self: flex-start;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+.child {
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+    min-width: 500px;
+    height: 100px;
+    text-align: center;
+    border: 3px solid white;
+} */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .nav_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+ }
+ .nav_items{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+ }
