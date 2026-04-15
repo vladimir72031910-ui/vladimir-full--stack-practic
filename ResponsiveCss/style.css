@@ -9,17 +9,17 @@
     line-height: 1.6;
 }
 
-.main {
+.page {
     max-width: 1200px;
 }
 
-h2 {
-    color: #667eea;
+.page_title {
+    color: #02c493;
     margin-bottom: 20px;
      margin: 20px;
 }
 
-.grid-box {
+.responsive__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -27,7 +27,7 @@ h2 {
     
 }
 
-.item {
+.responsive__item{
     text-align: center;
     background-color: #667eea;
     color: white;
@@ -37,15 +37,19 @@ h2 {
 
 }
 
+.responsive__item--current{
+    background-color: rgb(132, 69, 250);
+}
+
 @media(max-width: 600px) {
-    .grid-box {
+    .responsive__grid {
         grid-template-columns: 1fr;
     }
 }
 
 @media(min-width: 601px) and 
 (max-width: 800px){
-    .grid-box{
+    .responsive__grid{
         grid-template-columns: 
         repeat(2, 1fr);
         
