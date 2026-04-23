@@ -1,0 +1,31 @@
+.static__positioning {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    position: static;
+    margin-bottom: 50px;
+}
+
+.relative__positioning {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(150, 127, 255);
+    color: aliceblue;
+    position: relative;
+    
+    left: 20%;
+    top: 20px;
+    margin-bottom: 50px;
+}
+
+.relative__positioning2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(144, 153, 13);
+    color: aliceblue;
+    position: relative;
+    
+    left: 20%;
+    top: -120%;
+    margin-bottom: 50px;
+}
