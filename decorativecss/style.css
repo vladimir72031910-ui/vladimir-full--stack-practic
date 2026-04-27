@@ -34,18 +34,20 @@
 .example-row {
     display: flex;
     justify-content: center; 
+    flex-wrap: wrap;
     gap: 30px;
     
 
 }
 
 .example-box {
-    background-color: #eeacac;
+    background: linear-gradient(45deg, #eeacac,#ee66) ;
     color:rgb(255, 255, 255);
     font-size: 20px;
     padding: 40px 60px;
     align-items: center;
     border-radius: 10px;
+    
 }
 
 .shadow-basic {
@@ -95,3 +97,76 @@
 .blur-filter {
     filter: blur(1px);
 }
+
+.translate {
+    transform: translate(10px, 20px);
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.scale {
+    transform: scale(1.5);
+}
+
+.skew {
+    transform: skew(20deg, 10deg);
+}
+
+.translate-rotate {
+    transform: translate(10px, 20px) rotate(45deg);
+}
+
+.scale-rotate {
+    transform: scale(1.2) rotate(180deg);
+}
+
+.rotate-x {
+    transform: rotateX(45deg);
+}
+
+.rotate-y {
+    transform: rotateY(45deg);
+}
+
+.perspective-basic {
+    transform: perspective(200px) rotateX(45deg);
+}
+
+.point-center {
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+
+.point-left {
+    transform-origin: left;
+    transform: rotate(45deg);
+}
+
+.point-right {
+    transform-origin: right;
+    transform: rotate(45deg);
+}
+
+.hover-scale:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+
+}
+
+.hover-rotate:hover {
+    transition: transform 1s ease-in;
+    transform: rotate(180deg);
+
+}
+
+
+.hover-3D:hover {
+    transition: transform 1s ease-out;
+    transform: perspective(100px) rotateX(50deg);
+
+}
+
+
+gitn
